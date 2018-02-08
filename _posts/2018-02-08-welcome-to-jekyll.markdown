@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-02-08 13:51:06 +0200
@@ -17,6 +17,10 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+{% for member in site.data.team %}
+  Hello {{member.title}}
+{% endfor %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
