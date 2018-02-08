@@ -16,3 +16,11 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+
+
+{% for member in site.data.team %}
+  Hello {{member.title}}
+{% endfor %}
+
+VVVVVVVVVVVVVVVVVVVVVV
